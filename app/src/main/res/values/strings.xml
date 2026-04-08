@@ -1,0 +1,73 @@
+<resources>
+  <string name="app_name">Pkmn-Tcg-Support</string>
+
+  <!-- Menu-->
+  <string name="txtBatalla">Batalla</string>
+  <string name="txtManual">Manual de uso</string>
+
+  <!-- Configuracion-->
+  <string name="txtIdioma">Español/Ingles</string>
+  <string name="txtConfiguraciones">Configuraciones</string>
+  <string name="txtModo">Modo Oscuro</string>
+
+  <!-- Manual-->
+  <string name="txtManual2">Manual de uso</string>
+  <string name="txtHP">HP: Para restar (recuperar) HP a un Pokemon apretar el boton</string>
+  <string name="txtActivo">Pokemon Activo: Para Marcar tu Pokemon dejar prendida la opcion</string>
+  <string name="txtHabilidad">Pokemon Activo: Para Marcar tu Pokemon dejar prendida la opcion</string>
+  <string name="txtEliminarPoke">Eliminar Pokemon: para eliminar Pokemon, apretar el boton</string>
+
+
+  <!-- Manual2-->
+  <string name="txtEstado">Estado: Para cambiar el estado de un Pokemon (PAR,SLP,CONF), apretar el listado y seleccionar (si no tiene un estado especial dejarlo en estado)</string>
+  <string name="txtEstado2">Estado: Para cambiar el estado de un Pokemon (PSN,BRN,PSN/BRN), apretar el listado y seleccionar (si no tiene un estado especial dejarlo en estado)</string>
+  <string name="txtEnergia">Energia: Para marcar el uso de la energia de turno marcar como si</string>
+  <string name="txtPartidario">Partidario: Para marcar el uso del partidario de turno marcar como si</string>
+
+  <!-- Manual3-->
+  <string name="txtFinTurno">Fin de Turno: Para finalizar el turno y reiniciar los marcadores de Habilidad, Energia y Partidario, apretar el boton </string>
+  <string name="txtMoneda">Moneda: Para tirar la moneda apretar la imagen</string>
+  <string name="txtReiniciar">Reiniciar Partida: Para reiniciar la partida y partir desde cero, apretar el boton</string>
+  <string name="btnTurno2">Fin de Turno</string>
+  <string name="btnReiniciar2">Reiniciar Partida</string>
+
+
+  <!-- Batalla-->
+  <string name="coin_result_default"></string>
+  <string name="coin_heads">Cara</string>
+  <string name="coin_tails">Cruz</string>
+  <string name="dialog_title_modify_hp">Modificar HP</string>
+  <string name="dialog_hint_example">Ej: 50</string>
+  <string name="button_add">Sumar</string>
+  <string name="button_subtract">Restar</string>
+  <string name="button_cancel">Cancelar</string>
+
+  <string name="swEnergia">Energia No/Si</string>
+  <string name="swPartidario">Partidario No/Si</string>
+  <string name="btnFinTurno">Fin de Turno</string>
+  <string name="btnReiniciar">Reiniciar Partida</string>
+  <string name="swActivo">Activo No/Si</string>
+  <string name="swHabilidad">Habilidad</string>
+  <string name="btnEliminar">Eliminar Pokemon</string>
+
+
+
+  <string-array name="spinner_Estado">
+    <item>Estado</item>
+    <item>PAR</item>
+    <item>SLP</item>
+    <item>CONF</item>
+  </string-array>
+
+  <string-array name="spinner_Estado2">
+    <item>Estado 2</item>
+    <item>PSN</item>
+    <item>BRN</item>
+    <item>PSN/BRN</item>
+  </string-array>
+
+
+
+
+
+</resources>

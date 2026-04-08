@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:name=".Batalla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="2000dp">
+
+
+        <Button
+            android:id="@+id/btnEliminar7"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swActivo"
+            app:layout_constraintVertical_bias="0.226" />
+
+        <Button
+            android:id="@+id/btnEliminar8"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swActivo"
+            app:layout_constraintVertical_bias="0.224" />
+
+        <Switch
+            android:id="@+id/swActivo7"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/swActivo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.297" />
+
+        <Switch
+            android:id="@+id/swActivo8"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/swActivo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.297" />
+
+        <Button
+            android:id="@+id/btnHP7"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.634"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.279" />
+
+        <Button
+            android:id="@+id/btnHP8"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275" />
+
+        <Spinner
+            android:id="@+id/spEstado6"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.181" />
+
+        <EditText
+            android:id="@+id/txtHP5"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:longClickable="false"
+            android:text="0"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275" />
+
+        <EditText
+            android:id="@+id/txtHP8"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:longClickable="false"
+            android:text="0"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.274" />
+
+        <EditText
+            android:id="@+id/txtHP7"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:longClickable="false"
+            android:text="0"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275" />
+
+        <EditText
+            android:id="@+id/txtHP6"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:longClickable="false"
+            android:text="0"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.274" />
+
+        <Spinner
+            android:id="@+id/spEstado07"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <EditText
+            android:id="@+id/txtPokemon8"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Pokemon8"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.217" />
+
+        <Spinner
+            android:id="@+id/spEstado03"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            android:entries="@array/spinner_Estado2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085" />
+
+        <Spinner
+            android:id="@+id/spEstado02"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.084" />
+
+        <Spinner
+            android:id="@+id/spEstado04"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.084" />
+
+        <Button
+            android:id="@+id/btnEliminar4"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swActivo"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <Switch
+            android:id="@+id/sHabilidad4"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:text="@string/swHabilidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.142" />
+
+        <EditText
+            android:id="@+id/txtHP4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:longClickable="false"
+            android:text="0"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <Switch
+            android:id="@+id/swActivo4"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/swActivo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.128" />
+
+        <Button
+            android:id="@+id/btnHP4"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.102" />
+
+        <Button
+            android:id="@+id/btnEliminar3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swActivo"
+            app:layout_constraintVertical_bias="0.019" />
+
+        <EditText
+            android:id="@+id/txtPokemon4"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Pokemon4"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Switch
+            android:id="@+id/sHabilidad3"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:text="@string/swHabilidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.138" />
+
+        <Switch
+            android:id="@+id/swActivo3"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/swActivo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.124" />
+
+        <EditText
+            android:id="@+id/txtHP3"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:longClickable="false"
+            android:text="0"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.102" />
+
+        <Button
+            android:id="@+id/btnHP3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.643"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <Spinner
+            android:id="@+id/spEstado4"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <EditText
+            android:id="@+id/txtPokemon3"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Pokemon3"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Spinner
+            android:id="@+id/spEstado3"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <Button
+            android:id="@+id/btnEliminar2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swActivo"
+            app:layout_constraintVertical_bias="0.021" />
+
+        <Switch
+            android:id="@+id/sHabilidad2"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:text="@string/swHabilidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.141" />
+
+
+        <EditText
+            android:id="@+id/txtHP2"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:longClickable="false"
+            android:text="0"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <Switch
+            android:id="@+id/swActivo2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/swActivo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.125" />
+
+        <Button
+            android:id="@+id/btnHP2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <EditText
+            android:id="@+id/txtPokemon1"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Pokemon1"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.050" />
+
+        <EditText
+            android:id="@+id/txtPokemon5"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Pokemon5"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.218" />
+
+        <EditText
+            android:id="@+id/txtPokemon6"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Pokemon6"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.218" />
+
+        <EditText
+            android:id="@+id/txtPokemon7"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Pokemon7"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.218" />
+
+        <Spinner
+            android:id="@+id/spEstado2"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
+
+        <Button
+            android:id="@+id/btnHPm"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105" />
+
+        <Button
+            android:id="@+id/btnHP5"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275" />
+
+        <Button
+            android:id="@+id/btnHP6"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.376"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275" />
+
+        <Spinner
+            android:id="@+id/spEstado"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.001" />
+
+        <Spinner
+            android:id="@+id/spEstado5"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.181" />
+
+        <Spinner
+            android:id="@+id/spEstado05"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <Spinner
+            android:id="@+id/spEstado06"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.199" />
+
+        <Spinner
+            android:id="@+id/spEstado8"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.179" />
+
+        <Spinner
+            android:id="@+id/spEstado08"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.199" />
+
+        <Spinner
+            android:id="@+id/spEstado7"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPokemon1"
+            app:layout_constraintVertical_bias="0.181" />
+
+        <Spinner
+            android:id="@+id/spEstado01"
+            android:layout_width="130dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.088" />
+
+        <EditText
+            android:id="@+id/txtHP"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:longClickable="false"
+            android:text="0"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105" />
+
+        <EditText
+            android:id="@+id/txtPokemon2"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Pokemon2"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <Switch
+            android:id="@+id/sHabilidad"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:text="@string/swHabilidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.143" />
+
+        <Switch
+            android:id="@+id/sHabilidad5"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:text="@string/swHabilidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.312" />
+
+        <Switch
+            android:id="@+id/sHabilidad6"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:text="@string/swHabilidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.314" />
+
+        <Switch
+            android:id="@+id/sHabilidad7"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:text="@string/swHabilidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.595"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.314" />
+
+        <Switch
+            android:id="@+id/sHabilidad8"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:text="@string/swHabilidad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313" />
+
+        <ImageButton
+            android:id="@+id/btnMoneda"
+            android:layout_width="91dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/moneda" />
+
+        <EditText
+            android:id="@+id/txtMoneda"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="text"
+            android:textIsSelectable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.184"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.019" />
+
+        <Button
+            android:id="@+id/btnTurno"
+            android:layout_width="129dp"
+            android:layout_height="56dp"
+            android:text="@string/btnFinTurno"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.696"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.008" />
+
+        <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.086"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <Switch
+            android:id="@+id/swEnergia"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/swEnergia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.409"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/swPartidario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/swPartidario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.027" />
+
+        <Switch
+            android:id="@+id/swActivo"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/swActivo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.129" />
+
+        <Switch
+            android:id="@+id/swActivo5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/swActivo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.297" />
+
+        <Switch
+            android:id="@+id/swActivo6"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/swActivo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.297" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swActivo"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <Button
+            android:id="@+id/btnEliminar5"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swActivo"
+            app:layout_constraintVertical_bias="0.223" />
+
+        <Button
+            android:id="@+id/btnEliminar6"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btnEliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.304"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swActivo"
+            app:layout_constraintVertical_bias="0.223" />
+
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnReiniciar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.972"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.013" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
