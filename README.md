@@ -16,11 +16,12 @@ Aplicación móvil orientada a jugadores de Pokémon TCG (Juego de Cartas Colecc
 
 ## ⚙️ Reglas de Negocio y Funcionalidades Clave
 
+* **Pantalla de Bienvenida (Intro):** Animación o pantalla de carga inicial que da identidad y presentación profesional al abrir la aplicación.
 * **Gestión de Tablero (Single-Player):** Capacidad para administrar 1 Pokémon Activo y hasta 5 Pokémon en Banca (soporte para hasta 8 Pokémon en vista global por jugador).
 * **Contador de Daño y Estado:** Incremento/decremento rápido de contadores de daño por Pokémon.
 * **Control de Recursos por Turno:** Marcador interactivo para registrar si ya se utilizó la carta de Partidario (Supporter) o el anexo de Energía del turno actual.
 * **Herramientas de Azar:** Generador integrado para tiro de moneda (Coin Flip) conforme a las reglas oficiales.
+* **Modo Nocturno (Dark Mode):** Alternancia de temas visuales para reducir la fatiga visual y mejorar la visibilidad en ambientes con baja iluminación.
 * **Configuración de Idioma:** Panel de ajustes para alternar el idioma de la interfaz (incluyendo soporte completo al inglés).
 * **Manual de Uso Integrado:** Sección de ayuda y guía rápida dentro de la app para orientar a nuevos usuarios sobre cómo utilizar cada contador y herramienta.
-
 ---
